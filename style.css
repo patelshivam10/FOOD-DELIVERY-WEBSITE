@@ -6,3 +6,11 @@
     box-sizing: border-box;
     font-family: "Roboto Condensed" ,sans-serif;
 }
+
+:root{
+    --lead:#212121;
+    --gold-finger:#F2BD12;
+    --eye-ball:#FFFDF7;
+    --hint-yellow:#fcf1cc;
+    --pure-white:#FFF;
+}
