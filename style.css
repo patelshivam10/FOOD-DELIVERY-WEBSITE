@@ -19,6 +19,12 @@ body{
     background: var(--eye-ball);
 }
 /* BASIC STYLE */
+a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color:var(--lead);
+}
+
 
 /* HEADER STYLING  */
 
