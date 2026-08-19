@@ -59,8 +59,12 @@ li{
     border-radius: 1rem;
     font-size: 1.1rem;
     color:var(--pure-white);
+    box-shadow: rgb(0,0,0,0.1) 0 2px 1px;
+    transform: .3s ease-in-out;
 }
-
+.btn:hover{
+    background: var(--lead);
+}
 /* SECTIONS STYLING  */
 
 /* FOOTER STYLING */
