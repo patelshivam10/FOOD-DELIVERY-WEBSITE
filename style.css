@@ -34,6 +34,9 @@ li{
 .between{
     justify-content: space-between;
 }
+.gap-2{
+    gap:2rem;
+}
 .gap-3{
     gap: 3rem;
 }
@@ -65,6 +68,28 @@ li{
 .btn:hover{
     background: var(--lead);
 }
+.cart-icon{
+    color:var(--lead);
+    font-size: 1.3rem;
+    position:relative;
+}
+.cart-icon .cart-value{
+    position: absolute;
+    top:50%;
+    right:-10px;
+    font-size:.85rem;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius:100vw;
+    background:var(--gold-finger);
+    color:var(--lead);
+    text-align: center;
+    line-height: 20px;
+}
+
+
+
+
 /* SECTIONS STYLING  */
 
 /* FOOTER STYLING */
