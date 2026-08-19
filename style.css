@@ -39,7 +39,6 @@ li{
 }
 .wrapper{
     max-width: 1400px;
-    
     margin: auto;
     padding-inline: 1.5rem;
 }
@@ -47,6 +46,19 @@ li{
 /* HEADER STYLING  */
 .navbar{
     min-height: 14vh;
+}
+.logo{
+    font-size:2rem;
+    font-weight: bold;
+    color: var(--gold-finger);
+}
+.btn{
+    display: inline-block;
+    padding: .9rem 2rem;
+    background: var(--gold-finger);
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    color:var(--pure-white);
 }
 
 /* SECTIONS STYLING  */
