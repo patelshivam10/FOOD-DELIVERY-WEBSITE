@@ -37,8 +37,15 @@ li{
 .gap-3{
     gap: 3rem;
 }
+.wrapper{
+    max-width: 1400px;
+    background: gold;
+}
 
 /* HEADER STYLING  */
+.navbar{
+    min-height: 14vh;
+}
 
 /* SECTIONS STYLING  */
 
