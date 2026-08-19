@@ -31,6 +31,12 @@ a{
 li{
     list-style: none;
 }
+.between{
+    justify-content: space-between;
+}
+.gap-3{
+    gap: 3rem;
+}
 
 /* HEADER STYLING  */
 
