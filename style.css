@@ -123,14 +123,16 @@ li{
         gap:2rem;
         position: absolute;
         top:20%;
-        left:50%;
+        left:-100%;
         transform:translateX(-50%);
         width: 20rem;
         padding: 2rem;
         background: var(--pure-white);
         border: .1rem solid var(--gold-finger);
         border-radius: 2rem;
-        
+        box-shadow: rgba(0,0,0,0.05) 8px 8px 8px,
+        rgba(0,0,0,0.05) 8px 8px 8px inset;
+
 
     }
 }
