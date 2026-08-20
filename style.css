@@ -69,7 +69,7 @@ li{
     background: var(--lead);
 }
 .cart-icon{
-    color:var(--lead);
+    
     font-size: 1.3rem;
     position:relative;
 }
@@ -86,7 +86,12 @@ li{
     text-align: center;
     line-height: 20px;
 }
-
+.desktop-action .hamburger{
+    font-size: 1.5rem;
+    display: none;
+}.mobile-menu{
+    display: none;
+}
 
 
 
@@ -100,3 +105,23 @@ li{
 
 
 /* MEDIA QUERIES */
+
+@media screen and (max-width:780px){
+    .navlist,
+    .desktop-action .btn{
+        display:none;
+    }
+    .desktop-action .hamburger{
+        display: block;
+    }
+    .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+        position: 20%;
+    }
+}
+
+
