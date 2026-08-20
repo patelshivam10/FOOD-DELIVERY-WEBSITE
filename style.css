@@ -89,7 +89,8 @@ li{
 .desktop-action .hamburger{
     font-size: 1.5rem;
     display: none;
-}.mobile-menu{
+}
+.mobile-menu{
     display: none;
 }
 
@@ -120,7 +121,17 @@ li{
         justify-content: center;
         align-items: center;
         gap:2rem;
-        position: 20%;
+        position: absolute;
+        top:20%;
+        left:50%;
+        transform:translateX(-50%);
+        width: 20rem;
+        padding: 2rem;
+        background: var(--pure-white);
+        border: .1rem solid var(--gold-finger);
+        border-radius: 2rem;
+        
+
     }
 }
 
