@@ -45,6 +45,12 @@ li{
     margin: auto;
     padding-inline: 1.5rem;
 }
+img{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
 
 /* HEADER STYLING  */
 .navbar{
@@ -99,9 +105,32 @@ li{
 /* SECTIONS STYLING  */
 
 .hero-section{
-    background: gold;
+
     min-height: calc(100vh - 14vh);
 }
+.content,
+.image-container{
+    flex: 1;
+}
+h1{
+    font-size:5.6vw;
+    color:var(--lead);
+}
+h1 span{
+    color:var(--gold-finger);
+}
+p{
+    font-size: 1.25rem;
+    
+}
+
+
+
+
+
+
+
+
 
 /* FOOTER STYLING */
 
