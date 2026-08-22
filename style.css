@@ -27,6 +27,7 @@ a{
 .flex{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 li{
     list-style: none;
@@ -113,6 +114,7 @@ img{
 .content,
 .image-container{
     flex: 1;
+    flex-basis: 300px;
 }
 h1{
     font-size:5.6vw;
@@ -164,6 +166,7 @@ p{
 /* MEDIA QUERIES */
 
 @media screen and (max-width:780px){
+    /* HEADER STYLE */
     .navlist,
     .desktop-action .btn{
         display:none;
@@ -180,7 +183,7 @@ p{
         position: absolute;
         top:20%;
         left: -100px;
-        transform: translateX(-50%);
+        transform: translateX(-70%);
         width: 20rem;
         padding: 2rem;
         background: var(--pure-white);
@@ -193,8 +196,18 @@ p{
     .mobile-menu-active{
         left:50;
         transform: translateX(-50%);
-    }    
+    }  
     
+    /* SECTION STYLE */
+    h1{
+        font-size: 3.6rem;
+    }
+    .content{
+        padding-top:3rem;
+    }
+    .gap-2{
+        gap: 1.4rem;
+    }
 }
 
 
