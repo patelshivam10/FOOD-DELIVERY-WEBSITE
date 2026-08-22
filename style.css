@@ -52,6 +52,8 @@ img{
     display: block;
 }
 
+
+
 /* HEADER STYLING  */
 .navbar{
     min-height: 14vh;
@@ -121,9 +123,29 @@ h1 span{
 }
 p{
     font-size: 1.25rem;
-    
+    color:gray;
+    line-height: 1.8rem;
+    font-weight: 400;    
 }
-
+.para{
+    margin-block:2rem;
+    max-width:550px;
+}
+.social-icon{
+    background: var(--hint-yellow);
+    width:3rem;
+    aspect-ratio: 1;
+    border-radius:1rem;
+    font-size:1.2rem;
+    text-align: center;
+    line-height: 3rem;
+    box-shadow: rgb(0,0,0,0.1) 0 2px 1px;
+    transition: .3s ease-in-out;
+}
+.social-icon:hover{
+    background: var(--lead);
+    color:var(--pure-white);
+}
 
 
 
