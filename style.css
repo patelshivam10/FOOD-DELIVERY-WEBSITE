@@ -236,7 +236,11 @@ h4{
     color:var(--gold-finger);
     padding: 1.3rem 0 2rem 0;
 }
-
+/* SECTION 03 */
+.swiper {
+        width: 100%;
+        height: 100%;
+      }
 
 
 

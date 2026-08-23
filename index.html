@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
         integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css" </head>
 
 <body>
@@ -110,7 +111,7 @@
                     <img src="images/delivery-boy.png" alt="" </div>
                 </div>
         </section>
-        
+
     </main>
     <!-- SECTIONS PART -->
     <main>
@@ -123,30 +124,30 @@
                     <h5>Our Services</h5>
                     <h2>How does it work</h2>
                 </div>
-            <div class="flex text-center mt-4 gap-4">
-                <div class="service-card">
-                    <div class="img-container">
-                        <img src="images/easy-to-order.png" >
+                <div class="flex text-center mt-4 gap-4">
+                    <div class="service-card">
+                        <div class="img-container">
+                            <img src="images/easy-to-order.png">
+                        </div>
+                        <h3>Easy to Order</h3>
+                        <p">You only need a few steps in ordering food.</p>
                     </div>
-                    <h3>Easy to Order</h3>
-                    <p">You only need a few steps in ordering food.</p>
-                </div>
 
-                <div class="service-card">
-                    <div class="img-container">
-                        <img src="images/fast-delivery.png" >
+                    <div class="service-card">
+                        <div class="img-container">
+                            <img src="images/fast-delivery.png">
+                        </div>
+                        <h3>Fast deliveery</h3>
+                        <p">Delivery that is always ontime even faster.</p>
                     </div>
-                    <h3>Fast deliveery</h3>
-                    <p">Delivery that is always ontime even faster.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="img-container">
-                        <img src="images/best-quality.png" >
+
+                    <div class="service-card">
+                        <div class="img-container">
+                            <img src="images/best-quality.png">
+                        </div>
+                        <h3>Best Quality</h3>
+                        <p">Not only fast for us in quality is also number one.</p>
                     </div>
-                    <h3>Best Quality</h3>
-                    <p">Not only fast for us in quality is also number one.</p>
-            </div>
         </section>
 
         <section>
@@ -154,9 +155,9 @@
                 <div class="text-center">
                     <h5>Our Menu</h5>
                     <h2>The Most Popular</h2>
-            </div>
-            <div class="card-list text-center flex mt-4 gap-2">
-                <!-- <div class="order-card">
+                </div>
+                <div class="card-list text-center flex mt-4 gap-2">
+                    <!-- <div class="order-card">
                     <div class="image-card">
                         <img src="images/burger.png">
                     </div>
@@ -166,11 +167,29 @@
                     </h4>
                     <a href="#" class="btn">Add to Cart</a>
                 </div> -->
-            </div>
+                </div>
         </section>
 
         <section>
-            
+            <div class="wrapper p-top flex gap-3">
+                <div class="image-container">
+                    <img src="images/delivery-boy-with-phone.png">
+                </div>
+                <div class="content">
+                    <h5>Our reviews</h5>
+                    <h2>What they say?</h2>
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">Slide 1</div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -178,6 +197,9 @@
     <footer>
 
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </body>
 
 </html>
