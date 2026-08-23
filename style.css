@@ -1,112 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto Condensed" ,sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
-:root{
-    --lead:#212121;
-    --gold-finger:#F2BD12;
-    --eye-ball:#FFFDF7;
-    --hint-yellow:#fcf1cc;
-    --pure-white:#FFF;
+:root {
+    --lead: #212121;
+    --gold-finger: #F2BD12;
+    --eye-ball: #FFFDF7;
+    --hint-yellow: #fcf1cc;
+    --pure-white: #FFF;
 }
 
-body{
+body {
     background: var(--eye-ball);
 }
+
 /* BASIC STYLE */
-a{
+a {
     font-size: 1.1rem;
     text-decoration: none;
-    color:var(--lead);
+    color: var(--lead);
 }
-.flex{
+
+.flex {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
-li{
+
+li {
     list-style: none;
 }
-.between{
+
+.between {
     justify-content: space-between;
 }
-.gap-2{
-    gap:2rem;
+
+.gap-2 {
+    gap: 2rem;
 }
-.gap-3{
+
+.gap-3 {
     gap: 3rem;
 }
-.wrapper{
+
+.wrapper {
     max-width: 1400px;
     margin: auto;
     padding-inline: 1.5rem;
 }
-img{
+
+img {
     max-width: 100%;
     height: auto;
     margin: auto;
     display: block;
 }
-.p-top{
+
+.p-top {
     padding-top: 10rem;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
-.mt-4{
+
+.mt-4 {
     margin-top: 4rem;
 }
 
 /* HEADER STYLING  */
-.navbar{
+.navbar {
     min-height: 14vh;
 }
-.logo{
-    font-size:2rem;
+
+.logo {
+    font-size: 2rem;
     font-weight: bold;
     color: var(--gold-finger);
 }
-.btn{
+
+.btn {
     display: inline-block;
     padding: .9rem 2rem;
     background: var(--gold-finger);
     border-radius: 1rem;
     font-size: 1.1rem;
-    color:var(--pure-white);
-    box-shadow: rgb(0,0,0,0.1) 0 2px 1px;
+    color: var(--pure-white);
+    box-shadow: rgb(0, 0, 0, 0.1) 0 2px 1px;
     transform: .3s ease-in-out;
 }
-.btn:hover{
+
+.btn:hover {
     background: var(--lead);
 }
-.cart-icon{
-    
+
+.cart-icon {
+
     font-size: 1.3rem;
-    position:relative;
+    position: relative;
 }
-.cart-icon .cart-value{
+
+.cart-icon .cart-value {
     position: absolute;
-    top:50%;
-    right:-10px;
-    font-size:.85rem;
+    top: 50%;
+    right: -10px;
+    font-size: .85rem;
     width: 20px;
     aspect-ratio: 1;
-    border-radius:100vw;
-    background:var(--gold-finger);
-    color:var(--lead);
+    border-radius: 100vw;
+    background: var(--gold-finger);
+    color: var(--lead);
     text-align: center;
     line-height: 20px;
 }
-.desktop-action .hamburger{
+
+.desktop-action .hamburger {
     font-size: 1.5rem;
     display: none;
 }
-.mobile-menu{
+
+.mobile-menu {
     display: none;
 }
 
@@ -114,72 +132,96 @@ img{
 
 /* SECTIONS STYLING  */
 
-.hero-section{
+.hero-section {
 
     min-height: calc(100vh - 14vh);
 }
+
 .content,
 .image-container,
-.service-card{
+.service-card {
     flex: 1;
     flex-basis: 300px;
 }
-h1{
-    font-size:5.6vw;
-    color:var(--lead);
+
+h1 {
+    font-size: 5.6vw;
+    color: var(--lead);
 }
-h1 span{
-    color:var(--gold-finger);
+
+h1 span {
+    color: var(--gold-finger);
 }
-p{
+
+p {
     font-size: 1.25rem;
-    color:gray;
+    color: gray;
     line-height: 1.8rem;
-    font-weight: 400;    
+    font-weight: 400;
 }
-.para{
-    margin-block:2rem;
-    max-width:550px;
+
+.para {
+    margin-block: 2rem;
+    max-width: 550px;
 }
-.social-icon{
+
+.social-icon {
     background: var(--hint-yellow);
-    width:3rem;
+    width: 3rem;
     aspect-ratio: 1;
-    border-radius:1rem;
-    font-size:1.2rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
     text-align: center;
     line-height: 3rem;
-    box-shadow: rgb(0,0,0,0.1) 0 2px 1px;
+    box-shadow: rgb(0, 0, 0, 0.1) 0 2px 1px;
     transition: .3s ease-in-out;
 }
-.social-icon:hover{
+
+.social-icon:hover {
     background: var(--lead);
-    color:var(--pure-white);
+    color: var(--pure-white);
 }
 
 /* SECTION 01 */
-h5{
+h5 {
     font-size: 1.2rem;
     letter-spacing: .2rem;
-    color:var(--gold-finger);
+    color: var(--gold-finger);
     text-transform: uppercase;
 }
-h2{
+
+h2 {
     font-size: 3.7rem;
     text-transform: capitalize;
-    color:var(--lead);
+    color: var(--lead);
 }
-h3{
-    font-size:2rem;
+
+h3 {
+    font-size: 2rem;
     text-transform: capitalize;
-    color:var(--lead);
+    color: var(--lead);
 }
-.service-card h3{
-    margin-top:3rem;
+
+.service-card h3 {
+    margin-top: 3rem;
     margin-bottom: 1rem;
 }
-/* SECTION 2 */
 
+/* SECTION 2 */
+.order-card {
+    flex: 1;
+    flex-basis: 300px;
+    background: var(--pure-white);
+    border: .1rem solid var(--gold-finger);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 8px 8px 8px,
+        rgba(0, 0, 0, 0.05) 8px 8px 8px inset;
+    
+}
+
+.order-card img {
+    width: 15rem;
+}
 
 
 
@@ -194,23 +236,26 @@ h3{
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width:780px){
+@media screen and (max-width:780px) {
+
     /* HEADER STYLE */
     .navlist,
-    .desktop-action .btn{
-        display:none;
+    .desktop-action .btn {
+        display: none;
     }
-    .desktop-action .hamburger{
+
+    .desktop-action .hamburger {
         display: block;
     }
-    .mobile-menu{
+
+    .mobile-menu {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap:2rem;
+        gap: 2rem;
         position: absolute;
-        top:20%;
+        top: 20%;
         left: -100px;
         transform: translateX(-70%);
         width: 20rem;
@@ -219,33 +264,35 @@ h3{
         border: .1rem solid var(--gold-finger);
         border-radius: 2rem;
         box-shadow: rgba(0, 0, 0, 0.05) 8px 8px 8px,
-        rgba(0, 0, 0 ,0.05) 8px 8px 8px inset;  
+            rgba(0, 0, 0, 0.05) 8px 8px 8px inset;
         transition: all .5s ease-in-out;
     }
-    .mobile-menu-active{
-        left:50;
+
+    .mobile-menu-active {
+        left: 50;
         transform: translateX(-50%);
-    }  
-    
+    }
+
     /* SECTION STYLE */
 
     /* HERO STYLING */
-    h1{
+    h1 {
         font-size: 3.6rem;
     }
-    .content{
-        padding-top:3rem;
+
+    .content {
+        padding-top: 3rem;
     }
-    .gap-2{
+
+    .gap-2 {
         gap: 1.4rem;
     }
+
     /* SECTION-1 */
-    h2{
+    h2 {
         font-size: 3rem;
     }
 
 
 
 }
-
-
