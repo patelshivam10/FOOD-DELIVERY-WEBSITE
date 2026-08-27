@@ -240,6 +240,20 @@ h4{
     padding: 1.3rem 0 2rem 0;
 }
 /* SECTION 03 */
+.review-container{
+    width: 650px;
+    max-width: 100%;
+    flex:1;
+}
+.arrow{
+    width: 2.5rem;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    background: var(--gold-finger);
+    color:var(--lead);
+    text-align: center;
+    line-height: 2.5rem;
+}
 
 .swiper {
         width: 100%;
