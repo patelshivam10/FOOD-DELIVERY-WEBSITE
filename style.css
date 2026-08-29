@@ -75,6 +75,9 @@ img {
 .mt-half{
     margin-top: .5rem;
 }
+.m-auto{
+    margin: auto;
+}
 
 /* HEADER STYLING  */
 .navbar {
@@ -291,6 +294,8 @@ h4{
 .fa-star{
     color: var(--gold-finger);
 }
+
+
 
 
 
