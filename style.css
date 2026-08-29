@@ -260,13 +260,13 @@ h4{
     padding: 3rem 6rem;
     border-radius:  3rem;
 }
-.app-container h2{
+.app-container .container h2{
     font-size: 4.5rem;
 }
 .app-image{
     flex: 1;
 }
-.app-image img{
+.app-container .image-container img{
     width: 25rem;
 }
 
@@ -360,6 +360,12 @@ h4{
         font-size: 3rem;
     }
 
-
+    /* SECTION 04 */
+    .app-container{
+        padding: 2.2rem;
+    }
+    .app-conatainer .content h2{
+        font-size: 3.5rem;
+    }
 
 }
