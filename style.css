@@ -263,7 +263,7 @@ h4{
     padding: 3rem 6rem;
     border-radius:  3rem;
 }
-.app-container .container h2{
+.app-container .contain h2{
     font-size: 4.5rem;
 }
 .app-image{
@@ -295,7 +295,20 @@ h4{
     color: var(--gold-finger);
 }
 
-
+/* SECTION 05 */
+.input-container{
+    width: 43rem;
+    max-width:100%;
+    background: gold;
+}
+input[type="email"]{
+    flex: 1;
+    height: 5vh;
+    background: transparent;
+    border: none;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+}
 
 
 
