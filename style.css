@@ -269,19 +269,9 @@ h4{
 .app-container .contain h2{
     font-size: 4.5rem;
 }
-.app-image{
-    flex: 1;
-}
 .app-container .image-container img{
     width: 25rem;
 }
-
-
-/* .swiper {
-        width: 100%;
-        height: 100%;
-} */
-
 .profile{
     width: 4rem;
     aspect-ratio: 1;
@@ -326,8 +316,16 @@ input[type="email"]:focus{
     padding-block: 4rem;
     background: var(--hint-yellow);
 }
+.footer-container .flex{
+    align-items: flex-start;
+}
 .footer-wrapper{
     flex: 1;
+    flex-basis: 150px;
+}
+.footer-wrapper:nth-child(1){
+    flex:2;
+    flex-basis: 300px;
 }
 .footer-wrapper .social-icon{
     background: var(--pure-white);
@@ -339,6 +337,7 @@ input[type="email"]:focus{
 .footer-link{
     color:grey;
     font-size: 1.1rem;
+    transition: .3s ease-in-out;
 }
 .footer-link:hover{
     color: var(--lead);
