@@ -303,6 +303,7 @@ h4{
     padding: .8rem;
     box-shadow: rgb(0, 0, 0.2) 0 5px 8px;
     border-radius: 1rem;
+    margin: 4rem auto 0 auto;
 }
 input[type="email"]{
     flex: 1;
@@ -316,10 +317,15 @@ input[type="email"]:focus{
     outline: none;
 }
 
-
-
 /* FOOTER STYLING */
-
+.footer-container{
+    margin-top: 10rem;
+    padding-block: 4rem;
+    background: var(--hint-yellow);
+}
+.footer-wrapper{
+    flex: 1;
+}
 
 
 
