@@ -78,6 +78,9 @@ img {
 .m-auto{
     margin: auto;
 }
+.mt-one-half{
+    margin-top:1.5rem;
+}
 
 /* HEADER STYLING  */
 .navbar {
@@ -326,8 +329,20 @@ input[type="email"]:focus{
 .footer-wrapper{
     flex: 1;
 }
-
-
+.footer-wrapper .social-icon{
+    background: var(--pure-white);
+}
+.footer-wrapper .social-icon:hover{
+    background: var(--lead);
+    color: var(--pure-white);
+}
+.footer-link{
+    color:grey;
+    font-size: 1.1rem;
+}
+.footer-link:hover{
+    color: var(--lead);
+}
 
 
 
