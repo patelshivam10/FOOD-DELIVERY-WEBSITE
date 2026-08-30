@@ -299,15 +299,21 @@ h4{
 .input-container{
     width: 43rem;
     max-width:100%;
-    background: gold;
+    background:var(--pure-white);
+    padding: .8rem;
+    box-shadow: rgb(0, 0, 0.2) 0 5px 8px;
+    border-radius: 1rem;
 }
 input[type="email"]{
     flex: 1;
-    height: 5vh;
+    height: 7vh;
     background: transparent;
     border: none;
     font-size: 1.1rem;
     padding-left: 1rem;
+}
+input[type="email"]:focus{
+    outline: none;
 }
 
 
