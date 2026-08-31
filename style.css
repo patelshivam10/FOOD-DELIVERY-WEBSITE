@@ -245,6 +245,16 @@ h4{
     color:var(--gold-finger);
     padding: 1.3rem 0 2rem 0;
 }
+
+/* CART TAB STYLE */
+.cart-tab{
+    background: var(--hint-yellow);
+    position:fixed;
+    inset: 0 0 0 auto;
+    width: 25rem;
+    padding-block: 2rem;
+}
+
 /* SECTION 03 */
 .review-container{
     width: 650px;
