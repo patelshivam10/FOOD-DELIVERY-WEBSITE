@@ -253,7 +253,31 @@ h4{
     inset: 0 0 0 auto;
     width: 25rem;
     padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
 }
+.cart-list{
+    flex:1;
+    width: 100%;
+}
+.total-container{
+    width: 100%;
+    background: var(--gold-finger);
+    text-align: center;
+    margin-block: 1rem;
+    padding-block:1rem;
+}
+.total-conrainer h4{
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.btn-container .btn{
+    background: var(--lead);
+}
+
 
 /* SECTION 03 */
 .review-container{
