@@ -283,6 +283,20 @@ h4{
     color: var(--lead);
 }
 
+.item{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    padding: .7rem 1rem;
+}
+.item .item-image img{
+    width: 5rem;
+}
+.item h4{
+    font-size: 1.3rem;
+    color: var(--lead);
+}
+
 /* SECTION 03 */
 .review-container{
     width: 650px;
