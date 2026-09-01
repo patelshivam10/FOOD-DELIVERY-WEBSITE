@@ -260,6 +260,9 @@ h4{
     z-index: 99;
     box-shadow: rgba(0, 0, 0, 0.1) -10px -10px 20px;
 }
+.cart-tab-active{
+    inset: 0 0 0 auto;
+}
 .cart-list{
     flex:1;
     width: 100%;
