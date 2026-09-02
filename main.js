@@ -1,5 +1,5 @@
 var swiper = new Swiper('.mySwiper', {
-    loop:true,
+    loop: true,
     navigation: {
         nextEl: '#next',
         prevEl: '#prev',
@@ -7,42 +7,42 @@ var swiper = new Swiper('.mySwiper', {
 });
 
 
-const cartIcon= document.querySelector('.cart-icon');
-const cartTab= document.querySelector('.cart-tab');
-const closebtn= document.querySelector('.close-btn');
-const cardList= document.querySelector('.card-list');
+const cartIcon = document.querySelector('.cart-icon');
+const cartTab = document.querySelector('.cart-tab');
+const closebtn = document.querySelector('.close-btn');
+const cardList = document.querySelector('.card-list');
 
 
-cartIcon.addEventListener('click',()=> cartTab.classList.add('cart-tab-active'));
-closebtn.addEventListener('click',()=> cartTab.classList.remove('cart-tab-active'));
+cartIcon.addEventListener('click', () => cartTab.classList.add('cart-tab-active'));
+closebtn.addEventListener('click', () => cartTab.classList.remove('cart-tab-active'));
 
-let productList=[];
+let productList = [];
 
-const showCart=()=>{
+const showCards = () => {
+
     productList.forEach(product => {
-        const orderCart= document.createElement('div');
-        orderCart.classList.add('order-cart');
-    
-        orderCard.innerHTML=`
+
+        const orderCard = document.createElement('div');
+        orderCard.classList.add('order-card');
+
+        orderCard.innerHTML = `
         <div class="card-image">
-            <img src="images/burger.png">
+            <img src="${product.image}">
         </div>
-        <div class="Double Beef Burger">
-            <h4>299</h4>
-            <h4 class=price>299</h4>
-            <a href="#" class="btn">Add to Cart</a>
-        </div>
+        <h4>${product.name}</h4>
+        <h4 class="price"><i class="fa-solid fa-indian-rupee-sign"></i>${product.price}</h4>
+        <a href="#" class="btn">Add to Cart</a>
         `;
-        cartTab.appendChild(orderCart);
+        cardList.appendChild(orderCard);
     })
 }
 
-const initApp=()=>{
+const initApp = () => {
     fetch('products.json').then
-    (response=>response.jason()).then
-    (data=>{
-        productList=data;
-        showCart();
-    })
+        (response => response.json()).then
+        (data => {
+            productList = data;
+            showCards();
+        })
 }
 initApp();
