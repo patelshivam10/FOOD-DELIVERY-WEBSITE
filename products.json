@@ -3,48 +3,48 @@
         "id": 1,
         "name": "Double Beef Burger",
         "price": "299",
-        "image":"images/burger.jpg"
+        "image":"images/burger.png"
     },
     {
         "id": 2,
         "name": "Veggie pizza",
         "price": "199",
-        "image":"images/veggie-pizza.jpg"
+        "image":"images/veggie-pizza.png"
     },
     {
         "id": 3,
         "name": "Fried Chicken",
         "price": "149",
-        "image":"images/fried-chicken.jpg"
+        "image":"images/fried-chicken.png"
     },
     {
         "id": 4,
         "name": "Chicken Roll",
         "price": "249",
-        "image":"images/chicken-roll.jpg"
+        "image":"images/chicken-roll.png"
     },
     {
         "id": 5,
         "name": "Sub Sandwich",
         "price": "299",
-        "image":"images/sub-sandwich.jpg"
+        "image":"images/sub-sandwich.png"
     },
     {
         "id": 6,
         "name": "Chicken Lasagna",
         "price": "199",
-        "image":"images/chicken-lasagna.jpg"
+        "image":"images/chicken-lasagna.png"
     },
     {
         "id": 7,
         "name": "Itallian Spaghetti",
         "price": "249",
-        "image":"images/italian-spaghetti.jpg"
+        "image":"images/italian-spaghetti.png"
     },
     {
         "id": 8,
         "name": "Spring Rolls",
         "price": "149",
-        "image":"images/spring-rolls.jpg"
+        "image":"images/spring-rolls.png"
     }
 ]
