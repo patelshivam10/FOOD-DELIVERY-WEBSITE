@@ -70,6 +70,8 @@ const addToCart = () => {
             </a>
         </div>
     `;
+
+    cartList.appendChild(cartItem);
 }
 
 const initApp = () => {
