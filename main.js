@@ -37,27 +37,27 @@ const showCards = () => {
         cardList.appendChild(orderCard);
 
         const cardBtn = orderCard.querySelector('.card-btn');
-        cardBtn.addEventListener('click', () => {
+        cardBtn.addEventListener('click', (e) => {
             e.preventDefault();
 
-            addToCart();
+            addToCart(product);
         });
     });
 };
 
-const addToCart = () => {
+const addToCart = (product) => {
     const cartItem = document.createElement('div');
     cartItem.classList.add('item');
 
     cartItem.innerHTML = `
     <div class="item-image">
-            <img src="images/burger.png">
+            <img src="${product.image}">
         </div>
         <div>
-            <h4>Double Beef Burger</h4>
+            <h4>${product.name}</h4>
             <h4 class="item-total">
             <i class="fa-solid fa-indian-rupee-sign">
-            </i>200
+            </i>${product.price}
             </h4>
         </div>
         <div class="flex">
