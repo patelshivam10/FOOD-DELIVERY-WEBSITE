@@ -53,7 +53,7 @@ const addToCart = (product) => {
     <div class="item-image">
             <img src="${product.image}">
         </div>
-        <div>
+        <div class="detail">
             <h4>${product.name}</h4>
             <h4 class="item-total">
             <i class="fa-solid fa-indian-rupee-sign">
