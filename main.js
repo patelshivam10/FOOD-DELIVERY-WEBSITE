@@ -55,6 +55,8 @@ const addToCart = (product) => {
     }
     cartProduct.push(product);
 
+    let quantity = 1;
+
 
     const cartItem = document.createElement('div');
     cartItem.classList.add('item');
@@ -71,18 +73,26 @@ const addToCart = (product) => {
             </h4>
         </div>
         <div class="flex">
-            <a href="#" class="quantity-btn">
+            <a href="#" class="quantity-btn minus">
                 <i class="fa-solid fa-minus"></i>
             </a>
-            <h4 class="quantity-value">1</h4>
-            <a href="#" class="quantity-btn">
+            <h4 class="quantity-value">${quantity}</h4>
+            <a href="#" class="quantity-btn plus">
                 <i class="fa-solid fa-plus"></i>
             </a>
         </div>
     `;
 
     cartList.appendChild(cartItem);
-}
+
+    const plusBtn = cartItem.querySelector('.plus');
+    const quantityValue=cartItem.querySelector('.quantity-value');
+    plusBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        quantity++;
+        quantityValue.textContent = quantity;
+    });
+};
 
 const initApp = () => {
     fetch('products.json').then
