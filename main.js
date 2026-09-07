@@ -18,6 +18,7 @@ cartIcon.addEventListener('click', () => cartTab.classList.add('cart-tab-active'
 closebtn.addEventListener('click', () => cartTab.classList.remove('cart-tab-active'));
 
 let productList = [];
+let cartProduct =[];
 
 const showCards = () => {
 
@@ -46,6 +47,15 @@ const showCards = () => {
 };
 
 const addToCart = (product) => {
+
+    const existingProduct = cartProduct.find(item=> item.id === product.id);
+    if(existingProduct){
+        alert('Item already in your cart');
+        return;
+    }
+    cartProduct.push(product);
+
+
     const cartItem = document.createElement('div');
     cartItem.classList.add('item');
 
