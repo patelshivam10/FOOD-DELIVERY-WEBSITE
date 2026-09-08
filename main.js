@@ -56,6 +56,7 @@ const addToCart = (product) => {
     cartProduct.push(product);
 
     let quantity = 1;
+    let price=parseFloat(product.price.replace('₹',''));
 
 
     const cartItem = document.createElement('div');
@@ -69,8 +70,7 @@ const addToCart = (product) => {
             <h4>${product.name}</h4>
             <h4 class="item-total">
             <i class="fa-solid fa-indian-rupee-sign">
-            </i>${product.price}
-            </h4>
+            </i>${product.price}</h4>
         </div>
         <div class="flex">
             <a href="#" class="quantity-btn minus">
@@ -87,10 +87,13 @@ const addToCart = (product) => {
 
     const plusBtn = cartItem.querySelector('.plus');
     const quantityValue=cartItem.querySelector('.quantity-value');
+    const itemTotal=cartItem.querySelector('.item-total');
+
     plusBtn.addEventListener('click', (e) => {
         e.preventDefault();
         quantity++;
         quantityValue.textContent = quantity;
+        itemTotal.textContent = `₹${(price * quantity).toFixed(2)}`;
     });
 };
 
