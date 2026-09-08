@@ -102,6 +102,9 @@ const addToCart = (product) => {
             quantity--;
             quantityValue.textContent = quantity;
             itemTotal.textContent = `₹${(price * quantity).toFixed(2)}`;
+        }else{
+            cartItem.remove();
+            cartProduct = cartProduct.filter(item => item.id !== product.id);
         }
     });
 };
