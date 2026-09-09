@@ -20,6 +20,15 @@ closebtn.addEventListener('click', () => cartTab.classList.remove('cart-tab-acti
 let productList = [];
 let cartProduct =[];
 
+const updateTotal = () => {
+    let total = 0;
+
+    document.querySelectorAll('.item-total').forEach(itemTotal => {
+        
+    });
+    document.querySelector('.total-value').textContent = `₹${total.toFixed(2)}`;
+}
+
 const showCards = () => {
 
     productList.forEach(product => {
