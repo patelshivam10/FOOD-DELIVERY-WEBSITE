@@ -103,8 +103,12 @@ const addToCart = (product) => {
             quantityValue.textContent = quantity;
             itemTotal.textContent = `₹${(price * quantity).toFixed(2)}`;
         }else{
-            cartItem.remove();
-            cartProduct = cartProduct.filter(item => item.id !== product.id);
+            cartItem.classList.add('slide-out')
+
+            setTimeout(() => {
+                cartItem.remove();
+                cartProduct = cartProduct.filter(item => item.id !== product.id);
+            }, 300);
         }
     });
 };
