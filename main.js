@@ -21,12 +21,12 @@ let productList = [];
 let cartProduct =[];
 
 const updateTotal = () => {
-    let total = 0;
+    let totalPrice = 0;
 
-    document.querySelectorAll('.item-total').forEach(itemTotal => {
-        
+    document.querySelectorAll('.item').forEach(item => {
+        const prize=parseFloat(item.querySelector('.item-total').textContent.replace('₹',''));
     });
-    document.querySelector('.total-value').textContent = `₹${total.toFixed(2)}`;
+    document.querySelector('.total-value').textContent = `₹${totalPrice.toFixed(2)}`;
 }
 
 const showCards = () => {
