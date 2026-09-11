@@ -21,17 +21,14 @@ closebtn.addEventListener('click', () => cartTab.classList.remove('cart-tab-acti
 let productList = [];
 let cartProduct =[];
 
-const updateTotals = () => {
-    let totalPrice = 0;
+const updateTotals=()=>{
+    let totalPrice=0;
+    document.querySelectorAll('.item').forEach(item=>{
 
-    document.querySelectorAll('.item').forEach(item => {
-        const prize=parseFloat(item.querySelector('.cart-total').textContent.replace('₹',''));
-        totalPrice += prize;
+        const price= parseFloat(item.querySelector)
+    })
 
-    });
-    cartTotal.textContent = `₹${totalPrice.toFixed(2)}`;
 }
-updateTotals();
 
 const showCards = () => {
 
