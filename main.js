@@ -110,6 +110,7 @@ const addToCart = (product) => {
         quantity++;
         quantityValue.textContent = quantity;
         itemTotal.textContent = `₹${(price * quantity).toFixed(2)}`;
+        updateTotals();
     });
     minusBtn.addEventListener('click', (e) => {
         e.preventDefault();
