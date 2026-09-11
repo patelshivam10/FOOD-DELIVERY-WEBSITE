@@ -23,6 +23,7 @@ let cartProduct =[];
 
 const updateTotals=()=>{
     let totalPrice=0;
+    let totalQuantity=0;
     document.querySelectorAll('.item').forEach(item=>{
 
         const price= parseFloat(item.querySelector('.item-total').textContent.replace('₹',''));
@@ -118,12 +119,14 @@ const addToCart = (product) => {
             quantity--;
             quantityValue.textContent = quantity;
             itemTotal.textContent = `₹${(price * quantity).toFixed(2)}`;
+            updateTotals();
         }else{
             cartItem.classList.add('slide-out')
 
             setTimeout(() => {
                 cartItem.remove();
                 cartProduct = cartProduct.filter(item => item.id !== product.id);
+                updateTotals();
             }, 300);
         }
     });
