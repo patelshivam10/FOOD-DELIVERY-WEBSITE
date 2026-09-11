@@ -475,7 +475,7 @@ input[type="email"]:focus{
 
     .mobile-menu-active {
         left: 50;
-        transform: translateX(-50%);
+        transform: translateX(50%);
     }
 
     /* SECTION STYLE */
