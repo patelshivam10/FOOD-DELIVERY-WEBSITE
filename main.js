@@ -25,8 +25,11 @@ const updateTotals=()=>{
     let totalPrice=0;
     document.querySelectorAll('.item').forEach(item=>{
 
-        const price= parseFloat(item.querySelector)
-    })
+        const price= parseFloat(item.querySelector('.item-total').textContent.replace('₹',''));
+        totalPrice += price;
+    });
+
+    cartTotal.textContent = `₹${totalPrice.toFixed(2)}`;
 
 }
 
@@ -94,6 +97,7 @@ const addToCart = (product) => {
     `;
 
     cartList.appendChild(cartItem);
+    updateTotals();
 
 
     const plusBtn = cartItem.querySelector('.plus');
